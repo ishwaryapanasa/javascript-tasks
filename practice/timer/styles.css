@@ -1,0 +1,66 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/timer.jpg'); 
+    background-size: cover; /* Ensures the image covers the whole window */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; 
+    color: white;
+    text-align: center;
+  }
+  
+  /* Stopwatch Container */
+  .stopwatch-container {
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Slightly visible background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Timer Display */
+  .timer {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .control-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+  
+  .control-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  

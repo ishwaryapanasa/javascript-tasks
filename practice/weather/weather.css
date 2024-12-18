@@ -1,0 +1,179 @@
+/* Reset default body and container styles */
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    text-align: center;
+    font-weight: bold;
+    background-image: url('images/weather.jpg'); 
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed in place */
+    filter: brightness(0.8); /* Slightly darkens the background for contrast */
+
+}
+.outer-container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px; 
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Weather App Container */
+.weather-app {
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent white with glass effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /*Subtle shadow*/
+    border-radius: 20px;
+    padding: 20px;
+    width: 380px;
+    color: black;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Reduced spacing */
+    gap: 6px;
+    margin-top: 1rem;
+}
+
+#cityInput {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.6); /* Light background for input */
+    color: #292929;
+}
+
+#searchButton {
+    background: rgba(231, 237, 237, 0.8); /* Button background */
+    border: none;
+    border-radius: 20px;
+    padding: 5px 11px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background: rgb(27, 161, 161); /* Slight color change on hover */
+}
+
+/* Weather Info Section */
+.weather-info {
+    text-align: center;
+}
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5); /*Light background for the icon*/
+    padding: 10px;
+}
+
+/* Temperature and City Name */
+.temperature {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.city-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    color :black;
+}
+
+/* Weather Details */
+.weather-details {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Forecast Container */
+#forecast-container {
+    display: none;
+    background: rgba(255, 255, 255, 0.19); /* Similar semi-transparent white background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    color:black;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+/* Forecast Day Styling */
+.forecast-day {
+    /* margin-bottom: -5px; */
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+.date{
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+/* Main container for each forecast */
+.forecast-container {
+    display: flex;               
+    align-items: center;           
+    justify-content: space-between; 
+    border-radius: 8px;            
+    font-weight: bold;           
+}
+
+/* Container for forecast details (date, description, and temperature) */
+.forecast-details {
+    display: flex;                 
+    flex-direction: column;        
+}
+
+/* Style for the weather icon */
+.forecast-container img {
+    width: 120px;                   
+    height: 120px;                  
+    margin-left: 20px;             
+    object-fit: contain;           
+}
+.forecast-container.highlight {
+    background-color: #faf9f5; /* Gold color for the current day */
+    box-shadow: 0px 0px 10px 3px rgba(254, 254, 254, 0.8);
+    font-weight: bold;
+    color: black;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .weather-app {
+        width: 90%;
+    }
+
+    #cityInput {
+        width: 100%;
+    }
+}

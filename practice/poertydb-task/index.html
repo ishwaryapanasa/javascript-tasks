@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poetry Fetcher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Poetry Fetcher</h1>
+      <p>Enter an author’s name to get their poems from PoetryDB.</p>
+    </header>
+    <main>
+      <div class="search">
+        <input type="text" id="author" placeholder="Enter author name">
+        <button id="fetch-poems">Get Poems</button>
+      </div>
+      <section id="poems" class="poems-container">
+        <!-- Poems will appear here --> 
+         <h3 id="poem-title"></h3>
+         <p id="poem-lines"></p>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

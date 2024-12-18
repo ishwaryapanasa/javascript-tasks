@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:  violet;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .notes-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .notes-header img {
+    width: 100px;
+    height: auto;
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+  }
+  
+  button .icon {
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #notesContainer {
+    margin-top: 20px;
+  }
+  
+  .note {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .note-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    height: 80px;
+    box-sizing: border-box;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;  /* Position the delete icon at the top right of the textarea */
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1; /* Ensure the delete button is above the textarea */
+  }
+  
+  .delete-btn:hover {
+    color: red;
+  }
+  
+  
+  

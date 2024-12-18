@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+    margin: 0;
+  }
+  
+  .music-player {
+    width: 320px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Navbar Icons */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Song Image */
+  .song-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    object-fit: cover;
+  }
+  
+  /* Song Title */
+  .song-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Progress Bar */
+  .progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .progress {
+    width: 0%;
+    height: 100%;
+    background-color: #007bff;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .progress-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Controls */
+  .controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .control-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .control-btn.play {
+    font-size: 24px;
+  }
+  
+  /* Play/Pause Icon Toggle */
+  .play::before {
+    content: "\9658"; /* Play icon */
+  }
+  .play.paused::before {
+    content: "\10074\10074"; /* Pause icon */
+  }
+   .forward-icon{
+margin-right: 40px;
+  }

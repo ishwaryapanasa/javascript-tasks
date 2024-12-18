@@ -1,0 +1,78 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4B0082, #9400D3);
+
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    width: 30%;
+    color:white;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.dob-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+    display: block;
+}
+
+input[type="date"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.calendar-icon {
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #4CAF50;
+    color:black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    background-color: rgb(220, 220, 81);
+}
+
+button:hover {
+    background-color:#ccc;
+}
+
+#ageResult {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+}

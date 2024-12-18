@@ -1,0 +1,61 @@
+/* Styles for the Quote Generator */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4B0082, #9400D3); /* Dark Violet to Violet */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.quote-container {
+    background: rgba(255, 255, 255, 0.5); /* Light transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.quote-display {
+    margin-bottom: 20px;
+    
+}
+
+#quoteText {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#authorText {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap:1rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4B0082;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9400D3;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Music Player</title>
+</head>
+<body>
+
+  <div class="music-player">
+    <!-- Navbar -->
+    <div class="navbar">
+      <i class="icon navbar-icon">&#9776;</i> <!-- Menu Icon -->
+      <i class="icon forward-icon">&#9654;</i> <!-- Forward Icon -->
+    </div>
+
+    <!-- Song Image -->
+    <div class="song-image">
+      <img src="https://via.placeholder.com/150" alt="Song Image">
+    </div>
+
+    <!-- Song Title -->
+    <div class="song-title">Song Name</div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress"></div>
+        <div class="progress-dot"></div>
+      </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audioPlayer" src=""></audio>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button class="control-btn backward">&#9664;</button> <!-- Backward Button -->
+      <button class="control-btn play" id="playBtn">&#9658;</button> <!-- Play Button -->
+      <button class="control-btn forward">&#9654;</button> <!-- Forward Button -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
