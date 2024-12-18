@@ -1,0 +1,48 @@
+<html>
+    <head></head>
+    <body>
+        <div class="outline" [ngSwitch]="tab">
+           <div class="style">
+            <button class="btn" (click)="button1()">info</button>
+            <button class="btn" (click)="button2()">privacy</button>
+            <button class="btn" (click)="button3()">service</button>
+            <button class="btn" (click)="button4()">user</button>
+            
+            
+           </div>       
+<div class="setting" *ngSwitchDefault="'info'">
+<h1> information Custom directive class</h1>
+<p >
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    lorem Ipsum has been the industry's standard dummy text ever since the  1500s.
+
+</p>
+</div>
+
+<div class="setting "  *ngSwitchCase="'privacy'" >
+    <h1>privacy conatiner Custom directive class</h1>
+<p >
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    lorem Ipsum has been the industry's standard dummy text ever since the  1500s.
+</p>
+</div>
+
+<div class="setting "  *ngSwitchCase="'service'" >
+    <h1>service conatiner Custom directive class</h1>
+<p >
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    lorem Ipsum has been the industry's standard dummy text ever since the  1500s.
+</p>
+</div>
+
+<div class="setting "  *ngSwitchCase="'user'" >
+    <h1> user container Custom directive class</h1>
+<p >
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    lorem Ipsum has been the industry's standard dummy text ever since the  1500s.
+</p>
+</div>
+</div>
+
+</body>
+</html>

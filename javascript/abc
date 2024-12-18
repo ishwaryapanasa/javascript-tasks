@@ -1,0 +1,4 @@
+ <div class="msg-container hide">
+        <h1 class="msg">congratulations</h1>
+        <button class="newbtn">New Game</button>
+    </div>

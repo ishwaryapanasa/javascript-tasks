@@ -1,0 +1,130 @@
+.nav-container {
+  display: flex;              /* Enable flexbox for layout */
+  align-items: center;        /* Align items vertically center */
+  justify-content: space-between; /* Distribute space evenly */
+  padding: 10px 20px;         /* Add padding around the container */
+  background-color: #f8f8f8;  /* Light background color */
+}
+
+.nav-container img {
+  height: 40px;               /* Adjust the logo size */
+}
+
+.nav-elements {
+  display: flex;              /* Make navigation links in a row */
+  gap: 20px;                  /* Add gap between the links */
+}
+
+.nav-elements a {
+  text-decoration: none;      /* Remove underline from links */
+  color: #333;                /* Dark text color for links */
+  font-size:20px;            /* Adjust font size */
+  font-weight: bold;          /* Make text bold */
+}
+
+.nav-elements a:hover {
+  color: #007bff;             /* Add hover effect */
+}
+
+button.login {
+  padding: 8px 16px;          /* Add padding inside the button */
+  background-color: red;  /* Blue background for the button */
+  color: white;               /* White text color */
+  border: none;               /* Remove border */
+  border-radius: 4px;         /* Add rounded corners */
+  cursor: pointer;            /* Pointer cursor on hover */
+  font-size: 16px;            /* Font size of the button */
+}
+
+button.login:hover {
+  background-color: #0056b3;  /* Darker blue on hover */
+}
+/* Container for the Hero section */
+.container {
+  display: flex;               /* Flexbox layout for the container */
+  align-items: center;         /* Vertically center the items */
+  justify-content: space-between; /* Space between text on left and image on right */
+  padding: 50px 20px;          /* Padding around the content */
+  background-color: #f8f8f8;   /* Light background color */
+  border-radius: 8px;          /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-top: 30px;            /* Space from the top */
+}
+
+/* Style for the left side content (heading, paragraph, and buttons) */
+.text-container {
+  max-width: 600px;            /* Limit the width of the text container */
+}
+
+/* Style for the main heading */
+.text-container h1 {
+  font-size: 76px;             /* Larger font size */
+  font-weight: bold;           /* Bold text */
+  color: #333;                 /* Dark text color */
+  margin-bottom: 20px;
+  max-width: 100%;             /* Full width for the heading */
+}
+
+/* Style for the paragraph */
+.text-container p {
+  font-size: 24px;             /* Set font size for the paragraph */
+  color: #292929;                 /* Lighter text color */
+  line-height: 1.6;            /* Increase line height for readability */
+  margin-bottom: 30px;         /* Space below the paragraph */
+}
+
+/* Button container */
+.btn-container {
+  display: flex;               /* Flexbox layout for the buttons */
+  gap: 20px;                   /* Space between buttons */
+  margin-bottom: 30px;         /* Space below the buttons */
+}
+
+/* Styles for the buttons */
+.btn {
+  padding: 12px 30px;          /* Padding inside the buttons */
+  font-size: 18px;             /* Button text size */
+  background-color: red;       /* Red background for the first button */
+  color: white;                /* White text color */
+  border: none;                /* Remove border */
+  border-radius: 4px;          /* Rounded corners */
+  cursor: pointer;             /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for the first button */
+.btn:hover {
+  background-color: #ff5733;   /* Darker red on hover */
+}
+
+/* Styles for the second button (category) */
+.category-btn {
+  padding: 12px 30px;
+  font-size: 18px;
+  /* background-color: #f1f1f1;  Light background for the category button */
+  color: #333;                 /* Dark text color */
+  border: 1px solid #ccc;      /* Light border */
+  border-radius: 4px;          /* Rounded corners */
+  cursor: pointer;             /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for the category button */
+.btn-container button:hover {
+  background-color: #e0e0e0;   /* Slightly darker gray on hover */
+}
+
+/* Style for the image section */
+.container img {
+  max-width: 100%;             /* Make the image responsive */
+  height: auto;                /* Maintain aspect ratio */
+  border-radius: 8px;          /* Rounded corners for the image */
+  max-height: 400px;           /* Set a max height for the image */
+  object-fit: cover;           /* Ensure image covers the container area */
+}
+.images-container{
+  display: flex;
+  height: 50px;
+  width:50px;
+  gap:1rem;
+}

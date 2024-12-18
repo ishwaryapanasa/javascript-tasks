@@ -1,0 +1,19 @@
+<h1>Shoe Products</h1>
+<body>
+  <filter [All]="totalproducts" 
+  [Instock]="totalinstock"
+   [outofstock]="totaloutofstock">
+  (buttonchanged)="filteroption($event)"</filter>
+  <div class="product-list">
+<ng-container  *ngFor="let product of shoeProducts" >
+  <product  [product]="product"
+    *ngIf="searchText ===''||product.name.toLowerCase().includes(searchText)" 
+    (click)="selectedproduct=product"></product> 
+</ng-container>
+</div></body>
+
+  
+
+
+
+

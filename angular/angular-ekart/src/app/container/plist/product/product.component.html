@@ -1,0 +1,21 @@
+
+<html>
+    <head></head>
+<body>
+    
+<div class="product-list" Highlights [appDisabled]="!product.inStock" >
+    <div class="product-card">
+    <p class="discount">{{ product.discount }}% off</p>
+    <img [src]="product.imageUrl" [alt]="product.name" class="product-image">
+    <h2 class="product-name">{{ product.name }}</h2>
+    <p class="product-price">
+      ${{ (product.price * (1 - product.discount / 100)).toFixed(2) }}
+      <span class="original-price">$ {{ product.price.toFixed(2) }}</span>
+    </p>
+    <p [ngStyle]="{color: (product.inStock)?'green' : 'red'}">{{product.inStock?  "available" : "out of stock"}}</p> 
+</div>  
+  </div>
+
+</body>
+  </html>
+

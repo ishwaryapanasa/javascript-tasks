@@ -1,0 +1,23 @@
+<app-seach (selectedinput)="searchtextchanged($event)"></app-seach>
+<plist [searchText]="searchText" #productlistcomponent></plist>
+<pdetail *ngIf="productlistcomponent.selectedproduct" [productlistcomp]="productlistcomponent"></pdetail>
+
+<div class="ekart-featured-products">
+    <div class="ekart-featured-product-heading">
+        <h1 >Latest Arrival in Popular Brands</h1>
+    </div>
+   <featured-brand><h3 class="title">New Arrivals in Nike</h3>
+    <button class="call-to-action">show New Arrivals in Nike</button></featured-brand>
+
+   <featured-brand>
+    <h3 class="title">New Arrivals Adidas</h3>
+    <button class="call-to-action">show New Arrivals in Adidas</button>
+   </featured-brand> 
+
+   <featured-brand>
+    <h3 class="title">New Arrivals in Reebok</h3>
+    <button class="call-to-action">show New Arrivals in Reebok </button>
+   </featured-brand>
+   
+
+</div>

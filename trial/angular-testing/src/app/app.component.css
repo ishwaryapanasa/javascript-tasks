@@ -1,0 +1,28 @@
+.backcolor{
+    background-color: aqua;
+    color:black;
+    border: 4px solid black;
+}
+.setting{
+    margin: 3rem;
+    padding: 1opx;
+}
+.outline{
+    border: 5px solid black;
+}
+
+.btn{
+    height:30px;
+    display: inline;
+    border-radius: 0px;
+   
+background-color: #282828;
+    color: white;
+    font-size: 18px;
+    border-width: 0px;
+}
+.style{
+    background-color: #282828;
+    gap:5rem;
+    
+}

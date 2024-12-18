@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Search Input</title>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search..." #searchinput>
+        <button class="search-button" (click)="updatesearch()">Search</button>
+        <p class="para" *ngIf="searchText">searching result:{{searchText}}</p>
+    </div>
+</body>
+</html>
+

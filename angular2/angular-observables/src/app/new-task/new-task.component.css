@@ -1,0 +1,17 @@
+.container{
+    background-color: blueviolet;
+    height:30vh;
+    
+}
+button{
+    background-color:rgb(213, 9, 148);
+    padding:3px;
+    color: white;
+    margin-top:6rem;
+    border-width: 0px;
+}
+input{
+    margin-top:6rem;
+    margin-left: 40rem;
+}
+

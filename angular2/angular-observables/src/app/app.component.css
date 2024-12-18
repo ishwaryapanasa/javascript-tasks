@@ -1,0 +1,22 @@
+button{
+    background-color: red;
+    padding: 15px;
+    color:white;
+    border-radius: 3px;
+    border-width: 0px;
+
+}
+.container{
+    
+    margin :5rem;
+    padding:5px;
+   
+}
+.data-list{
+    
+    
+background-color: bisque;
+margin :1rem;
+width:80rem;
+padding: 5px;
+}

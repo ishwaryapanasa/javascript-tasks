@@ -1,0 +1,27 @@
+
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    transition: box-shadow 0.3s;
+}
+
+
+
+.product-image {
+    width: 100%; /* Full width of the card */
+    height: auto;
+}
+
+.product-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.discount {
+    background-color: aquamarine;
+    color: black;
+    display: inline;
+}

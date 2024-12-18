@@ -1,0 +1,10 @@
+.container{
+    margin: 10rem 10rem 10rem 10rem;
+   
+    
+}
+.task-list{
+    height: 20px;
+    background-color:wheat;
+    gap:4rem; 
+}
